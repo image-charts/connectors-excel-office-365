@@ -1,0 +1,55 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Charts Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <link href="./taskpane.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="">
+    <section
+      id="get-started-today"
+      class="relative overflow-hidden h-screen flex items-center"
+      style="background: #273078"
+      ;
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="mx-auto max-w-lg text-center">
+          <div class="flex justify-center">
+            <img
+              src="https://global-uploads.webflow.com/5e74e2639194e2571d9fd099/6303a21bff86044c201578f1_Image%20Charts%20White.svg"
+              alt=""
+              class="mb-12"
+            />
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold leading-9 tracking-tight text-white mb-2">Available functions:</h2>
+        <ul class="list-disc text-white">
+          <li>
+            <span class="font-mono italic">IMAGECHARTS.SIGN_URL(link; account_id; secret_key)</span>
+            <span class="text-light text-red-500 text-xs">Enterprise only</span
+            ><span
+              ><br />
+              Generate a signed URL with your Image-charts account.
+              <a href="https://documentation.image-charts.com/enterprise/" class="underline"
+                >See the documentation</a
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
