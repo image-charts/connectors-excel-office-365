@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ProvidePlugin = require("webpack").ProvidePlugin;
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = process.env.PRODUCTION_URL;
 
 /* global require, module, process, __dirname */
 
@@ -18,6 +18,11 @@ async function getHttpsOptions() {
 
 module.exports = async (env, options) => {
   const dev = options.mode === "development";
+
+  if (!dev && !urlProd) {
+    throw new Error('Please set "PRODUCTION_URL" environment variable');
+  }
+
   const config = {
     devtool: "source-map",
     entry: {

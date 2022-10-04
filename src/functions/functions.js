@@ -3,13 +3,13 @@ var crypto = require("crypto");
 
 /**
  * Get an image-chart public url for an enterprise customer
- * @customfunction GET_URL
+ * @customfunction SIGN_URL
  * @param {string} url Your image-chart's url.
  * @param {string} accountId Your image-chart's account id.
  * @param {string} secretKey Your image-chart's secret key.
  * @returns {string} Your chart's public url.
  */
-function getURL(url, accountId, secretKey) {
+function SIGN_URL(url, accountId, secretKey) {
   function sign(secretKey, query) {
     return crypto.createHmac("sha256", secretKey).update(query).digest("hex");
   }
