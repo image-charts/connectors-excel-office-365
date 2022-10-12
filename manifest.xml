@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="image-charts"/>
   <Description DefaultValue="Write your own Excel functions in JavaScript."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.jpeg"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.jpeg"/>
   <SupportUrl DefaultValue="https://www.image-charts.com/"/>
   <AppDomains>
     <AppDomain>https://www.image-charts.com</AppDomain>
@@ -81,14 +81,14 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.jpeg"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.jpeg"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.jpeg"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:3000/dist/functions.js"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://localhost:3000/dist/functions.json"/>
-        <bt:Url id="Functions.Page.Url" DefaultValue="https://localhost:3000/dist/functions.html"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://localhost:3000/functions.js"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://localhost:3000/functions.json"/>
+        <bt:Url id="Functions.Page.Url" DefaultValue="https://localhost:3000/functions.html"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>

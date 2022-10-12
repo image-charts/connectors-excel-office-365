@@ -93,6 +93,10 @@ module.exports = async (env, options) => {
       new CopyWebpackPlugin({
         patterns: [
           {
+            from: "netlify.toml",
+            to: "netlify.toml",
+          },
+          {
             from: "assets/*",
             to: "assets/[name][ext][query]",
           },
